@@ -80,8 +80,8 @@ npm run dev
 - La clave de Django y las credenciales de MySQL se leen desde variables de entorno.
 - `DEBUG` está desactivado por defecto.
 - CORS se limita a los orígenes locales utilizados durante el desarrollo.
-- Los archivos `.env`, entornos virtuales, dependencias y archivos compilados están excluidos del repositorio.
-- Se eliminó un modelo académico que almacenaba contraseñas directamente; la autenticación debe implementarse con el sistema seguro de Django.
+- Los nuevos archivos `.env`, entornos virtuales, dependencias y archivos compilados quedan excluidos mediante `.gitignore`.
+- Se retiró del código activo un modelo académico que almacenaba contraseñas directamente; la autenticación debe implementarse con el sistema seguro de Django.
 
 ## Limitaciones y próximos pasos
 
