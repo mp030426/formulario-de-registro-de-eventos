@@ -1,9 +1,8 @@
-from django.shortcuts import render
 from django.http import JsonResponse
-from django.shortcuts import render, redirect
-import hashlib
-from .models import Usuario , Organizador,Evento
-from evento.serializers import EventoSerializer, OrganizadorSerializer
+from django.shortcuts import redirect, render
+
+from .models import Evento, Organizador
+from evento.serializers import EventoSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response    
 from rest_framework import status
